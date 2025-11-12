@@ -32,9 +32,9 @@
     
     <script>
         // Bloquear el botón derecho sobre el iframe (opcional)
-        document.getElementById('contenido').addEventListener('contextmenu', function(e) {
-            e.preventDefault();
-            return true;
+        document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    return false;
         });
         
         // Detectar si alguien intenta acceder al contenido del iframe
